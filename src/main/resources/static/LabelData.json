@@ -1,0 +1,24 @@
+[
+  {
+    "ItemType": "KK_CSP-Bike-Engine",
+    "LabelType": "LabelBike",
+    "PrinterName": "PrinterBike",
+    "zpl_format": "formatBike",
+    "WorkArea": "AreaBike"
+  },
+  {
+    "ItemType": "KK_CSP-Truck-Engine",
+    "LabelType": "LabelTruck",
+    "PrinterName": "PrinterTruck",
+    "zpl_format": "formatTruck",
+    "WorkArea": "AreaTruck"
+  },
+  {
+    "ItemType": "KK-25A-JetEngine",
+    "LabelType": "LabelJet",
+    "PrinterName": "PrinterJet",
+    "zpl_format": "formatJet",
+    "WorkArea": "AreaJet"
+  }
+
+]
