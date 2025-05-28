@@ -1,6 +1,7 @@
 package com.am.approvemate.controller;
 
-import com.am.approvemate.model.Sample;
+import com.am.approvemate.model.Library;
+import com.am.approvemate.model.LicensingRecord;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,15 +17,15 @@ import java.util.List;
 public class AMController {
 
     @GetMapping("/getDetails")
-    public ResponseEntity<List<Sample>> sendDetails(){
+    public ResponseEntity<List<Library>> sendDetails(){
         try {
-            InputStream inputStream = new ClassPathResource("static/SampleData.json").getInputStream();
+            InputStream inputStream = new ClassPathResource("static/java_libraries_with_versions.json").getInputStream();
             ObjectMapper mapper = new ObjectMapper();
-            List<Sample> libraries = mapper.readValue(inputStream, new TypeReference<List<Sample>>() {});
+            List<Library> libraries = mapper.readValue(inputStream, new TypeReference<List<Library>>() {});
             return ResponseEntity.ok(libraries);
         } catch (Exception e) {
+            e.printStackTrace();
             return ResponseEntity.internalServerError().build();
         }
     }
-
 }
