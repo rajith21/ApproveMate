@@ -2,21 +2,21 @@
   {
     "ItemType": "KK_CSP-Bike-Engine",
     "LabelType": "LabelBike",
-    "PrinterName": "PrinterBike",
+    "PrinterName": "EngineBay-Printer01",
     "zpl_format": "formatBike",
     "WorkArea": "AreaBike"
   },
   {
     "ItemType": "KK_CSP-Truck-Engine",
     "LabelType": "LabelTruck",
-    "PrinterName": "PrinterTruck",
+    "PrinterName": "EngineBay-Printer02",
     "zpl_format": "formatTruck",
     "WorkArea": "AreaTruck"
   },
   {
     "ItemType": "KK-25A-JetEngine",
     "LabelType": "LabelJet",
-    "PrinterName": "PrinterJet",
+    "PrinterName": "EngineBay-Printer03",
     "zpl_format": "formatJet",
     "WorkArea": "AreaJet"
   }
